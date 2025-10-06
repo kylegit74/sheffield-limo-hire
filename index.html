@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-papbV+6h9z6FZyIY6xE4R6+HjQw0mZx1jpo3L9KzZy5V6Zr7E2t3g+g5uD0q5xT+UOqv1mJXx9Jkz0L7sG8C3A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .raleway {
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        .glowingbtn {
+            box-shadow: 0 0 10px #2EB460, 0 0 20px #2EB460;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 10px #2EB460, 0 0 20px #2EB460;
+            }
+
+            50% {
+                box-shadow: 0 0 20px #2EB460, 0 0 30px #2EB460;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="relative  h-[140px] bg-white w-full flex justify-center items-center">
+        <div class="w-[100%]  flex-col justify-center items-center">
+            <div class="flex justify-center gap-20 w-[100%] mt-4 ">
+                <div class="text-2xl text-[#2EB460]">Logo</div>
+                <div class="flex gap-5">
+                    <div class="w-[40px] h-[40px] flex justify-center items-center rounded-[5px] border-[1px]">
+                        <img src="assets/images/location.png" class="w-[25px]" />
+
+                    </div>
+                    <div class="">
+                        <h3 class="text-[#03498F] font-bold raleway">Visit Us :</h3>
+                        <p class="raleway">Lorem ipsum </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="w-[40px] h-[40px] flex justify-center items-center rounded-[5px] border-[1px]">
+                        <img src="assets/images/call.png" class="w-[25px]" />
+
+                    </div>
+                    <div class="">
+                        <h3 class="text-[#03498F] font-bold raleway">Call Us :</h3>
+                        <p class="raleway">Lorem ipsum </p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="w-[40px] h-[40px] flex justify-center items-center rounded-[5px] border-[1px]">
+                        <img src="assets/images/email.png" class="w-[25px]" />
+
+                    </div>
+                    <div class="">
+                        <h3 class="text-[#03498F] font-bold raleway">Mail Us :</h3>
+                        <p class="raleway">Lorem ipsum </p>
+                    </div>
+                </div>
+                <a href="tel:+12345678" class="w-[140px] h-[40px] border-[2px] flex justify-center items-center">
+                    <div class="w-[120px] flex justify-center items-center text-white h-[30px] bg-[#2EB460] raleway">
+                        Book Now
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center  w-[100%] mt-5 mb-4  ">
+                <div class="w-[70%] bg-[#03498F] flex justify-between h-[50px] rounded-[10px]">
+                    <ul class="flex text-whit gap-5 justify-center items-center px-2">
+                       <a href="#" ><li class="text-white text-[22px] raleway">Home </li></a>
+                        <a href="#about"><li class="text-white text-[22px] raleway">About Us</li></a>
+                        <a href="#services"><li class="text-white text-[22px] raleway">Services</li></a>
+                        <a href="#faq"><li class="text-white text-[22px] raleway">Faq</li></a>
+                       <a href="#contact"> <li class="text-white text-[22px] raleway">Contact </li></a>
+                    </ul>
+                    <div class="flex justify-end items-center gap-4">
+                        <!-- Facebook -->
+                        <a href="#"
+                            class="w-10 h-10 bg-white rounded-[5px] flex justify-center items-center shadow-lg hover:bg-[#16a34a] hover:scale-110 transition-all duration-300">
+                            <i class="ri-facebook-fill text-black  text-[24px]"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#"
+                            class="w-10 h-10 bg-white rounded-[5px] flex justify-center items-center shadow-lg hover:bg-[#16a34a] hover:scale-110 transition-all duration-300">
+                            <i class="ri-instagram-line text-black  text-[22px]"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#"
+                            class="w-10 h-10 bg-white rounded-[5px]  mr-[10px] flex justify-center items-center shadow-lg hover:bg-[#16a34a] hover:scale-110 transition-all duration-300">
+                            <i class="ri-youtube-fill text-black  text-[22px]"></i>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+    </header>
+
+    <div
+        class="relative w-full flex items-center h-[80vh] bg-center bg-cover bg-[url('assets/images/bannerimage.jpg')]">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <!-- Content above overlay -->
+        <div class="w-[60%] ml-[13%] flex-col items-center justify-center relative">
+            <div class="flex items-center gap-2 justify-start ml-[10px] ">
+                <div class="w-[100px] h-[2px] bg-white"></div>
+                <h2 class="text-white text-2xl">Our Best Services</h2>
+            </div>
+            <h1 class="text-start text-6xl text-white font-semibold raleway">Our Responsibilities <span
+                    class="text-[#2EB460]">
+                    To Provide Services</span></h1>
+            <p class="text-white mt-10 raleway">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur,
+                itaque
+                commodi non odit, sequi, adipisci iusto repudiandae praesentium natus maiores</p>
+            <a href="tel:+1234567"
+                class="w-[140px] glowingbtn h-[40px] border-[2px] flex justify-center items-center mt-4">
+                <div class="w-[120px] raleway flex justify-center items-center text-white h-[30px] bg-[#2EB460]">
+                    Call Now
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!---form section -->
+
+    <div class="w-[80%] mx-auto py-10 px-5 grid grid-cols-1 md:grid-cols-2 gap-10" id="about">
+
+        <!-- Left Side Form -->
+        <div class="bg-[#EEF6FF] mt-[-100px] relative z-[100px] shadow-lg rounded-xl p-6">
+            <div class="flex items-center gap-2">
+                <h2 class="text-2xl font-bold mb-5">
+                    <span class="text-green-600 text-2xl raleway">BOOK</span> YOUR CAR
+                </h2>
+                <div class="w-[100px] h-[2px] bg-black "></div>
+            </div>
+
+            <form class="space-y-4">
+                <input type="text" placeholder="-- Name --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="tel" placeholder="-- Phone no. --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="email" placeholder="-- Email Address --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="text" placeholder="-- Address --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="text" placeholder="-- Vehicle Type --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="text" placeholder="-- Pick-Up-Location --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="date" placeholder="-- Pick-Up-Date --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                <input type="text" placeholder="-- Drop-Off --"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+
+                <button type="submit"
+                    class="w-full py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 raleway">SUBMIT</button>
+            </form>
+        </div>
+
+        <!-- Right Side About Section -->
+        <div>
+            <h3 class="text-2xl font-semibold text-gray-600 raleway">ABOUT US</h3>
+            <h2 class="text-4xl text-[#03498F] font-bold leading-snug mb-3 raleway">
+                Our Responsibilities To <span class="text-green-600">Provide Services</span>
+            </h2>
+            <p class="text-gray-600 mb-5 raleway">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s...
+            </p>
+
+            <div class="flex items-center mb-6">
+                <div class="bg-[#2EB460] p-3 rounded-full mr-3">
+                    <img src="assets/images/expertise.png" class="h-[30px]" />
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-[#03498F] raleway">10 Years Of Experience</h4>
+                </div>
+            </div>
+
+            <h4 class="font-bold mb-2 raleway">Lorem Ipsum Dolor asset Amet :</h4>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-center gap-2 raleway"><span><img src="assets/images/check.png" /></span> Lorem
+                    Ipsum is
+                    simply dummy text of the printing industry.</li>
+                <li class="flex items-center gap-2 raleway"><span><img src="assets/images/check.png" /></span> Lorem
+                    Ipsum is
+                    simply dummy text of the printing industry.</li>
+            </ul>
+
+            <a href="tel:+1234567"
+                class="w-[140px] glowingbtn h-[40px] border-[2px] flex justify-center items-center mt-4">
+                <div class="w-[120px] raleway flex justify-center items-center text-white h-[30px] bg-[#2EB460]">
+                    Contact Us
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!---our service section-->
+
+    <div class="w-full flex pt-8 justify-center" id="services">
+        <div class="w-[80%] flex justify-between">
+            <!-- Left Side -->
+            <div class="w-[50%]">
+                <div class="flex items-center gap-5">
+                    <h2 class="text-3xl font-bold raleway mb-5">Our Services</h2>
+                    <div class="w-[100px] h-[2px] bg-[#2EB460]"></div>
+                </div>
+                <h2 class="text-3xl font-bold text-[#03498F] raleway">
+                    Our Responsibilities To
+                    <span class="text-[#2EB460] raleway">Provide Services</span>
+                </h2>
+            </div>
+            <div class="right w-[40%] raleway">
+                <p class="raleway text-[18px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sequi!
+                    Cumque voluptatem sint, nulla cum dignissimos ratione reiciendis
+                    dolorem accusantium voluptate maxime laboriosam nesciunt dolor vitae,
+                    quam impedit recusandae mollitia!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper w-full pt-10">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide flex">
+                <div
+                    class="w-[60%] relative h-[70vh] bg-cover bg-center bg-[url('assets/images/mandrivingimage.jpg')] flex justify-start items-center">
+                    <div class="absolute inset-0 bg-black/70"></div>
+                    <div class="relative ml-[15%]">
+                        <h3 class="text-white text-3xl font-bold pb-6 raleway">Black Lincoln MKT</h3>
+                        <p class="text-lg text-white raleway">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-lg text-white raleway">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="flex mt-5 gap-2">
+                            <img src="assets/images/car.png" class="w-[40px]" />
+                            <p class="text-white font-bold raleway">4 Passengers</p>
+                        </div>
+                        <a href="tel:+1234567"
+                            class="w-[140px] glowingbtn h-[40px] border-[2px] flex justify-center items-center mt-4">
+                            <div
+                                class="w-[120px] raleway flex justify-center items-center text-white h-[30px] bg-[#2EB460]">
+                                Book Now
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ml-[-100px] relative z-[100px] mt-[-50px]">
+                    <img src="assets/images/largecard.png" />
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide flex">
+                <div
+                    class="w-[60%] relative h-[70vh] bg-cover bg-center bg-[url('assets/images/mandrivingimage.jpg')] flex justify-start items-center">
+                    <div class="absolute inset-0 bg-black/70"></div>
+                    <div class="relative ml-[15%]">
+                        <h3 class="text-white text-3xl font-bold pb-6 raleway">Mercedes E-Class</h3>
+                        <p class="text-lg text-white raleway">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="text-lg text-white raleway">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="flex mt-5 gap-2">
+                            <img src="assets/images/car.png" class="w-[40px]" />
+                            <p class="text-white font-bold raleway">4 Passengers</p>
+                        </div>
+                        <div class="flex mt-2 gap-2">
+                            <img src="assets/images/car.png" class="w-[40px]" />
+                            <p class="text-white font-bold raleway">4 Passengers</p>
+                        </div>
+                        <div class="flex mt-2 gap-2">
+                            <img src="assets/images/car.png" class="w-[40px]" />
+                            <p class="text-white font-bold raleway">4 Passengers</p>
+                        </div>
+
+
+                        <a href="tel:+1234567"
+                            class="w-[140px] glowingbtn h-[40px] border-[2px] flex justify-center items-center mt-4">
+                            <div
+                                class="w-[120px] raleway flex justify-center items-center text-white h-[30px] bg-[#2EB460]">
+                                Book Now
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ml-[-100px] relative z-[100px] mt-[-50px]">
+                    <img src="assets/images/largecard.png" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrows -->
+
+    </div>
+
+    <!--- our services end here-->
+
+    <!---why choose us start from here -->
+    <div class="w-full flex-col items-center  justify-center  min-h-screen bg-[#4AD87F0F]">
+        <div class="flex justify-center">
+            <div class="w-[80%] flex   justify-center pt-10 items-center gap-10">
+                <div class="w-[150px] bg-[#4AD87F] h-[2px]"></div>
+                <h3 class="text-3xl font-bold raleway">Why Choose Us </h3>
+                <div class="w-[150px] bg-[#4AD87F] h-[2px]"></div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-5">
+            <div class="w-[90%] text-center">
+                <h3 class="text-4xl font-bold text-[#03498F] raleway">Our Responsibilities To <span
+                        class="text-[#4AD87F] raleway">Provide Services</span> </h3>
+                <div class="w-full flex justify-center">
+                    <div class="w-[50%] mt-10 flex justify-center raleway">
+                        <p class="raleway text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Similique molestiae dicta nesciunt
+                            ad.
+                            Illo quia aspernatur molestiae eligendi, doloribus dolorum ipsum, enim tempora .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-full  justify-center mt-5">
+            <div class="w-[90%]   flex justify-center  text-center">
+                <img src="assets/images/leftcar.png" class="w-[30%] mr-[-90px]" />
+                <img src="assets/images/straigcar.png" class="w-[30%]" />
+                <img src="assets/images/leftcar.png" class="w-[30%] ml-[-90px]  scale-x-[-1]" />
+
+
+            </div>
+        </div>
+
+
+        <div class="flex w-full  justify-center mt-5 py-10">
+            <div class="w-[90%]  gap-4 flex justify-center  text-center">
+                <div class="w-[20%] ">
+                    <div
+                        class="w-[40px] ml-[40%] h-[40px] flex justify-center items-center rounded-[5px] border-[1px] border-[#4AD87F]">
+                        <img src="assets/images/car-inspection.png" class="w-[25px]" />
+
+
+                    </div>
+                    <h5 class="font-bold text-black text-2xl raleway">Easy & Fast Booking</h5>
+                    <p class="raleway">The weather started getting rough the tiny ship was lost the min ting a maximum
+                        security stockade
+                        lost the minnow.</p>
+                </div>
+                <div>
+                    <img src="assets/images/curvearrow.png" style="transform: rotate(38deg); margin-top: -50px;" />
+                </div>
+
+
+                <div class="w-[20%] ">
+                    <div
+                        class="w-[40px] h-[40px]  ml-[40%] flex justify-center items-center rounded-[5px] border-[1px] border-[#4AD87F]">
+                        <img src="assets/images/payicon.png" class="w-[25px]" />
+
+
+                    </div>
+                    <h5 class="font-bold text-black text-2xl raleway">Easy & Fast Booking</h5>
+                    <p class="raleway">The weather started getting rough the tiny ship was lost the min ting a maximum
+                        security stockade
+                        lost the minnow.</p>
+                </div>
+                <div>
+                    <img src="assets/images/curvearrow.png" style="transform: rotate(38deg); margin-top: -50px;" />
+                </div>
+
+                <div class="w-[20%] ">
+                    <div
+                        class="w-[40px]  ml-[40%] h-[40px] flex justify-center items-center rounded-[5px] border-[1px] border-[#4AD87F]">
+                        <img src="assets/images/taxipng.png" class="w-[25px]" />
+
+
+                    </div>
+                    <h5 class="font-bold text-black text-2xl raleway">Easy & Fast Booking</h5>
+                    <p class="raleway">The weather started getting rough the tiny ship was lost the min ting a maximum
+                        security stockade
+                        lost the minnow.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---why choose us finished here -->
+
+    <section
+        class="relative bg-cover bg-center bg-[url('assets/images/mandrivingimage.jpg')] h-72 flex items-center justify-center"  id="contact">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+        <!-- Content -->
+        <div class="relative text-center text-white px-5 max-w-2xl">
+            <h1 class="text-2xl md:text-3xl font-bold mb-3 raleway">Are You Ready For A Ride ?</h1>
+            <p class="text-gray-200 text-[18px] md:text-base mb-6 raleway">
+                The weather started getting rough the tiny ship was lost the min ting a maximum security stockade lost
+                the minnow...
+            </p>
+
+            <a href="tel:+1234454343" class="flex items-center justify-center space-x-3">
+                <!-- Phone Icon -->
+                <div class="bg-green-600 text-white p-3 glowingbtn rounded-full">
+                    <img src="assets/images/callicon.png" class="h-[20px]" />
+                </div>
+                <span class="text-xl font-bold text-green-400 ">0123 456 7890</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <div class="w-full flex-col items-center bg-[#EEF6FF] justify-center min-h-[40vh]"  >
+        <div class="flex justify-center">
+            <div class="w-[80%] flex justify-center pt-10 items-center gap-10">
+                <div class="w-[150px] bg-[#4AD87F] h-[2px]"></div>
+                <h3 class="text-3xl font-bold raleway">Why Choose Us</h3>
+                <div class="w-[150px] bg-[#4AD87F] h-[2px]"></div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-5">
+            <div class="w-[90%] text-center">
+                <h3 class="text-4xl font-bold text-[#03498F] raleway">
+                    Our Responsibilities To <span class="text-[#4AD87F] raleway">Provide Services</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper Container for Testimonials -->
+    <div class="w-full mt-[-30px]">
+        <div class="swiper testimonialsSwiper w-full px-10 pb-10">
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide  flex justify-center">
+                    <div
+                        class="w-[40%] flex-col items-center justify-center bg-[#effff5] border-[1px] min-h-[30vh] p-6 rounded-lg">
+                        <div class="w-full flex justify-center mt-4">
+                            <div class="stars flex gap-1">
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center mt-5">
+                            <div class="w-[80%]">
+                                <p class="text-center raleway text-[18px]">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam eum suscipit unde
+                                    voluptate id cumque soluta tempore provident optio quasi, nemo earum minus
+                                    veritatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center mt-5">
+                            <p class="text-center font-bold text-xl raleway">John Milter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide flex justify-center">
+                    <div
+                        class="w-[40%] flex-col items-center justify-center bg-[#effff5] border-[1px] min-h-[30vh] p-6 rounded-lg">
+                        <div class="w-full flex justify-center mt-4">
+                            <div class="stars flex gap-1">
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                                <img src="assets/images/star.png" />
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center mt-5">
+                            <div class="w-[80%]">
+                                <p class="text-center raleway text-[18px]">
+                                    Amazing service and very professional. Highly recommended!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center mt-5">
+                            <p class="text-center font-bold text-xl raleway">Sarah Parker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more testimonial slides similarly -->
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--faq-->
+
+    <div class="w-full flex justify-center  mt-5 pb-10" id="faq">
+        <div class="w-full max-w-2xl p-6">
+            <h2
+                class="text-center flex items-center gap-10 justify-center ml-[5%] text-8xl font-extrabold text-green-100 relative mb-12">
+                <div class="w-[190px] raleway h-[2px] bg-green-200 mr-2"></div>
+                FAQ
+                <div class="w-[190px] h-[2px] bg-green-200 mr-2"></div>
+                <span
+                    class="absolute raleway left-1/2 -translate-x-1/2  text-xl text-black font-semibold tracking-wide">
+                    Frequently Asked Questions
+                </span>
+
+            </h2>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-green-300 rounded-md">
+                    <button
+                        class="w-full raleway flex  text-[22px] justify-between items-center p-4 text-left text-green-600 font-semibold"
+                        onclick="toggleFAQ(1)">
+                        1. What types of cars are available for hire?
+                        <span id="icon-1" class="text-xl">−</span>
+                    </button>
+                    <div id="answer-1" class="px-6 raleway pb-4 text-gray-600 text-1xl">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-green-300 rounded-md">
+                    <button
+                        class="w-full raleway text-[22px] flex justify-between items-center p-4 text-left text-[#16a34a] font-semibold"
+                        onclick="toggleFAQ(2)">
+                        2. What types of cars are available for hire?
+                        <span id="icon-2" class="text-xl">+</span>
+                    </button>
+                    <div id="answer-2" class="px-6 raleway pb-4 text-gray-600 text-1xl hidden">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-green-300 rounded-md">
+                    <button
+                        class="w-full raleway text-[22px] flex justify-between items-center p-4 text-left text-[#16a34a] font-semibold"
+                        onclick="toggleFAQ(3)">
+                        3. What types of cars are available for hire?
+                        <span id="icon-3" class="text-xl">+</span>
+                    </button>
+                    <div id="answer-3" class="px-6 text-1xl raleway pb-4 text-gray-600  hidden">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-[#EEF6FF] py-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+
+            <!-- Logo & About -->
+            <div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl font-bold text-blue-600">S</span>
+                    <span class="text-3xl font-bold text-green-600">H</span>
+                </div>
+                <p class="mt-4 text-[16px] raleway leading-relaxed text-black">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard.
+                </p>
+                <div class="flex space-x-3 mt-4">
+                    <a href="#"
+                        class="bg-green-900 hover:bg-green-600 h-10 w-10 flex justify-center items-center rounded text-white transition">
+                        <i class="ri-facebook-fill text-[25px]"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-green-900 hover:bg-green-600 h-10 w-10 flex justify-center items-center rounded text-white transition">
+                        <i class="ri-instagram-line text-[25px]"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-green-900 hover:bg-green-600 h-10 w-10 flex justify-center items-center rounded text-white transition">
+                        <i class="ri-youtube-fill text-[25px]"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-[20px] font-bold mb-4 raleway">Quick <span class="text-[#16a34a]">Links</span> </h3>
+                <ul class="space-y-2 text-[18px]">
+                    <a href="#"><li><i class="ri-arrow-right-line text-green-500"></i> Home</li></a>
+                   <a href="#about"><li><i class="ri-arrow-right-line text-green-500"></i>
+                        About us</li></a> 
+                   <a href="#services"> <li><i class="ri-arrow-right-line text-green-500"></i>
+                        Our Services</li>
+                        </a>
+                  
+                    <a href="#contact"><li><i class="ri-arrow-right-line text-green-500"></i>
+                        Contact</li></a>
+                    <a href="#faq"> <li><i class="ri-arrow-right-line text-green-500"></i>
+                        Faq</li>
+                        </a>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 font-[Raleway]">
+                    Contact <span class="text-[#16a34a]">Info</span>
+                </h3>
+
+                <ul class="space-y-3 text-[17px] font-[Raleway]">
+                    <li class="flex items-start space-x-2">
+                        <i class="ri-map-pin-line text-green-500 text-[20px] mt-1"></i>
+                        <span>32 Lorem Rd, Lorem BR2 8BA, United Kingdom</span>
+                    </li>
+
+                    <li class="flex items-start space-x-2">
+                        <i class="ri-mail-line text-green-500 text-[20px] mt-1"></i>
+                        <span>Loremtest@gmail.com</span>
+                    </li>
+
+                    <li class="flex items-start space-x-2">
+                        <i class="ri-phone-line text-green-500 text-[20px] mt-1"></i>
+                        <span>0123-4567-8065</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Working Hours -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 raleway">Working <span class="text-[#16a34a]"> Hours</span> </h3>
+                <p class=" raleway text-[17px]">Monday to Friday: <span class="font-semibold text-[#16a34a]">8am to
+                        8pm</span></p>
+                <p class="raleway text-[17px]">Saturday-Sunday: <span class="font-semibold text-[#16a34a]">9am to
+                        5pm</span></p>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-700 raleway mt-8 pt-4 text-center text-1xl text-black ">
+            © 2025 All Rights Reserved <a href="https://kyleinfotech.co.in/" class="text-[#16A34A] font-semibold">Kyle
+                Infotech </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`answer-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            const allAnswers = document.querySelectorAll('[id^="answer-"]');
+            const allIcons = document.querySelectorAll('[id^="icon-"]');
+
+            allAnswers.forEach(a => a.classList.add('hidden'));
+            allIcons.forEach(i => i.textContent = '+');
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.textContent = '−';
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = '+';
+            }
+        }
+
+
+        var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            effect: "slide",
+        });
+    </script>
+
+
+</body>
+
+</html>
